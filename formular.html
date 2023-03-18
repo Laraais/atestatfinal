@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>COS</title>
+<style>
+ img{ 
+        	height:100%;
+            width:100%;
+        }
+
+div.new {
+width:300px;
+hight:100%;
+    clear: both;
+    color: black;
+    background-color: #9cf;
+    padding: 4px;
+    border-top: 1px solid #00f;
+    border-right: 1px solid #00f;
+    border-bottom: 1px solid #00f;
+    border-left: 1px solid #00f;
+}
+
+
+
+div.sec{
+width:97%;
+hight:100%;
+    clear: both;
+    color: black;
+    background-color: lightyellow;
+    padding: 4px;;
+}
+
+
+.button {
+background-color:#6a5acd;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: bold;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+body {
+  background-image: url('fundal.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+} 
+</style>
+</head>
+<body>
+<div style= p align="center">
+<div class="new">
+<h1>DETALII COMANDA</h1>
+<div style= p align="left">
+<form>
+<br>
+
+<h2>Adresa de livrare</h2>
+<div class="sec">
+  <label for="nume">Nume:</label><br>
+  <input type="text" id="nume"><br>
+  <label for="prenume">Prenume:</label><br>
+  <input type="text" id="prenume" name="lname" ><br><br>
+<input type="checkbox" id="tara" name="tara" value="romania">
+  <label for="tara"> Romania</label><br>
+ <label for="Adresa">Adresa:</label><br>
+  <input type="text" id="Adresa" name="lname" ><br>
+<label for="judet">Judetul:</label><br>
+  <select id="judet" name="judet">
+    <option value="Alba">Alba</option>
+    <option value="Arad">Arad</option>
+    <option value="Argeș">Argeș</option>
+    <option value="Bacău">Bacău</option>
+   <option value="	Bihor">	Bihor</option>
+   <option value="Bistrița-Năsăud">Bistrița-Năsăud</option>
+   <option value="Botoșani">Botoșani</option>
+   <option value="Brașov">Brașov</option>
+   <option value="Brăila">Brăila</option>
+   <option value="	București	">	București	</option>
+   <option value="	Buzău">	Buzău</option>
+   <option value="Caraș-Severin">Caraș-Severin</option>
+   <option value="	Călărași">	Călărași</option>
+   <option value="	Cluj">	Cluj</option>
+   <option value="	Constanța">	Constanța</option>
+   <option value="Covasna">Covasna</option>
+   <option value="Dâmbovița">Dâmbovița</option>
+   <option value="	Dolj">	Dolj</option>
+   <option value="Galați">Galați</option>
+   <option value="Giurgiu">Giurgiu</option>
+   <option value="Gorj">Gorj</option>
+   <option value="Harghita">Harghita</option>
+   <option value="	Hunedoara">	Hunedoara</option>
+   <option value="Ialomița">Ialomița</option>
+   <option value="	Iași">	Iași</option>
+   <option value="	Ilfov">	Ilfov</option>
+   <option value="	Maramureș">	Maramureș</option>
+   <option value="	Mehedinți">	Mehedinți</option>
+   <option value="Mureș">Mureș</option>
+   <option value="	Neamț">	Neamț</option>
+   <option value="Olt">Olt</option>
+   <option value="	Prahova">	Prahova</option>
+   <option value="	Satu Mare">	Satu Mare</option>
+   <option value="	Sălaj">	Sălaj</option>
+   <option value="Sibiu">Sibiu</option>
+   <option value="Suceava">Suceava</option>
+   <option value="Teleorman">Teleorman</option>
+   <option value="Timiș">Timiș</option>
+   <option value="Tulcea">Tulcea</option>
+   <option value="	Vaslui">	Vaslui</option>
+   <option value="	Vâlcea">	Vâlcea</option>
+   <option value="Vrancea">Vrancea</option>
+  </select></div>
+
+
+
+<h2>Metode de livrare</h2>
+
+<div class="sec">
+
+<input type="radio" id="Cargus" name="Metode de livrare" value="Cargus">
+  <label for="Cargus">Cargus</label><br>
+  <input type="radio" id="FanCourier" name="Metode de livrare" value="FanCourier">
+  <label for="FanCourier">FanCourier</label><br>
+  <input type="radio" id="Posta Romana" name="Metode de livrare" value="Posta Romana">
+  <label for="Posta Romana">Posta Romana</label>
+</div>
+
+
+
+<h2>Optiuni de plata</h2>
+
+<div class="sec">
+<input type="radio" id="Card" name="Optiuni de plata" value="Card">
+  <label for="Card">Card</label><br>
+  <input type="radio" id="Cash" name="Optiuni de plata" value="Cash">
+  <label for="Cashr">Plata la primirea coletului</label><br>
+  <input type="radio" id="Rate" name="Optiuni de plata" value="Rate">
+  <label for="Rate">Plata in rate</label>
+</div>
+
+
+<h2>Observatii</h2>
+<p align="centre">
+<div class="sec">
+<textarea name="message" style="width:98%; height:100px;">
+Observatii
+</textarea></div></p>
+  <br><br>
+<p align="center">
+<button class="button" button type="submit" onclick="alert('Comanda a fost trimisa!')">Trimite</button>
+</p>
+</form>
+</div> 
+</div>
+</div>
+</body>
+</html>
+</body>
+</html>
